@@ -37,7 +37,7 @@ const models = [
   {"name": "hypnosis-tracy", "type": "chat", "description": "Hypnosis Tracy - Your Self-Help AI", "baseModel": false, "provider": "modal.com", "censored": false}
 ];
 
-const App = () => {
+const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -304,7 +304,7 @@ const App = () => {
           </motion.button>
         </header>
 
-        {/* App Area */}
+        {/* Chat Area */}
         <div className="flex-1 p-4 sm:p-6 overflow-y-auto">
           <AnimatePresence>
             {messages.map((msg, index) => (
@@ -398,4 +398,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Chat;
